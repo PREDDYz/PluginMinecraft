@@ -7,30 +7,30 @@ import de.FFA.Promo.listener.*;
 
 public class Main extends JavaPlugin {
 	
-	
-	
-	
-	
     //Plugin Aktiviert
 	public void onEnable() {
-		
+		System.out.println("[FFA] Plugin gestartet...");
 		register();
 		
 	}
 	
+	
+	
 	//Plugin Deaktkviert  
 	public void onDisable(){
-		
+		System.out.println("[FFA] Plugin gestoppt...");
 		
 	}
+	
+	
 	
 	//Commands & Listener Regestrieren
 	public void register(){
 		
-		//Listener
+	//Listener
 	getServer().getPluginManager().registerEvents(new JoinListener(), this);
 	
-		//Commands
+	//Commands
 	getCommand("BeispielKlasse").setExecutor(new BeispielKlasse());
 	}	
 }
