@@ -1,10 +1,10 @@
 package de.FFA.Promo;
 
-import de.FFA.Promo.listener.*;
-import de.FFA.Promo.commands.*;
-import de.FFA.Promo.utils.*;
 import org.bukkit.plugin.java.JavaPlugin;
-public class Main {
+
+import de.FFA.Promo.commands.BeispielKlasse;
+
+public class Main extends JavaPlugin {
 	
 	
 	
@@ -26,6 +26,6 @@ public class Main {
 	//Commands & Listener Regestrieren
 	public void register(){
 		
-	
+	getCommand("BeispielKlasse").setExecutor(new BeispielKlasse());
 	}	
 }
