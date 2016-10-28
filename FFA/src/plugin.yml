@@ -1,0 +1,6 @@
+name: FFAplugin
+author: Tomo & pREDDY
+description: Ein FFA Plugin
+version: 29.10.2016
+
+main: de.FFA.Promo.Main
