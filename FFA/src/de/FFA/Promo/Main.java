@@ -1,7 +1,9 @@
 package de.FFA.Promo;
 
-import me.tomo.listener.JoinListener;
-
+import de.FFA.Promo.listener.*;
+import de.FFA.Promo.commands.*;
+import de.FFA.Promo.utils.*;
+import org.bukkit.plugin.java.JavaPlugin;
 public class Main {
 	
 	
@@ -23,7 +25,7 @@ public class Main {
 	
 	//Commands & Listener Regestrieren
 	public void register(){
-		getServer().getPluginManager().registerEvents(new JoinListener(),this);
+		
 	
 	}	
 }
