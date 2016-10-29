@@ -1,16 +1,21 @@
 package de.FFA.Promo;
 
+
 import org.bukkit.plugin.java.JavaPlugin;
 
 import de.FFA.Promo.commands.BeispielKlasse;
+import de.FFA.Promo.commands.Start;
 import de.FFA.Promo.listener.*;
 
 public class Main extends JavaPlugin {
 	
     //Plugin Aktiviert
 	public void onEnable() {
-		System.out.println("[FFA] Plugin gestartet...");
+		System.out.println("[FFA] Plugin wird geladen!...");
 		register();
+		
+		
+		
 		
 	}
 	
@@ -31,6 +36,7 @@ public class Main extends JavaPlugin {
 	getServer().getPluginManager().registerEvents(new JoinListener(), this);
 	
 	//Commands
+	getCommand("Start").setExecutor(new Start());
 	getCommand("BeispielKlasse").setExecutor(new BeispielKlasse());
 	}	
 }
