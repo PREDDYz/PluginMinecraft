@@ -4,3 +4,9 @@ description: Ein FFA Plugin
 version: 29.10.2016
 
 main: de.FFA.Promo.Main
+
+commands:
+    start:
+      description: Startet das FFA plugin!
+    beispielklasse:
+      description: Diese Klasse dient als Vorlage!

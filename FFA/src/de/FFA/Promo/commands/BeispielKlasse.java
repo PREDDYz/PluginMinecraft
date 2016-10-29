@@ -11,7 +11,7 @@ public class BeispielKlasse implements CommandExecutor {
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
 		Player p =(Player) sender; //p == der Sender des "Commands" 
 		
-		p.sendMessage("Dies ist ein Beispiel Command!"); //Der spieler erhält eine Message.
+		p.sendMessage("Dies ist ein Beispiel Command!"); //Der Spieler erhält eine Message.
 		
 		return false;
 	}
