@@ -24,7 +24,7 @@ public class Main extends JavaPlugin {
 			
 	}
 	
-	//Plugin Deaktkviert  
+	//Plugin Deaktiviert
 	public void onDisable(){
 		System.out.println("[FFA] Plugin gestoppt...");
 		
@@ -38,6 +38,7 @@ public class Main extends JavaPlugin {
 	//Listener
 	getServer().getPluginManager().registerEvents(new JoinListener(), this);
 	getServer().getPluginManager().registerEvents(new ChatListener(), this);
+		
 	//Commands
 	getCommand("Start").setExecutor(new Start());
 	getCommand("BeispielKlasse").setExecutor(new BeispielKlasse());
